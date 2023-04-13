@@ -1,3 +1,3 @@
-FROM redcoolbeans/dockerlint
-CMD ["/bin/bash", "dockerlint"]
-
+FROM redcoolbeans/dockerlint:latest
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]

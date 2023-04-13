@@ -1,1 +1,2 @@
- dockerlint $1
+#!/bin/bash
+dockerlint $1

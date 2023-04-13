@@ -1,3 +1,3 @@
 FROM redcoolbeans/dockerlint
-CMD ["/bin/bash"]
+CMD ["/bin/bash", "dockerlint"]
 

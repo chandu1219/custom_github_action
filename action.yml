@@ -15,4 +15,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - dockerlint
     - ${{ inputs.docker-file-path }}

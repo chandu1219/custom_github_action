@@ -1,0 +1,18 @@
+name: 'Dockerfile linter'
+description: 'Check docker lint using docker linter'
+author: 'chandu1219'
+branding:
+  icon: 'check'
+  color: 'green'
+inputs:
+  docker-file-path: 
+    required: true
+    default: 'Dockerfile'
+outputs:
+  lint-result:
+    description: 'lint result'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.docker-file-path }}

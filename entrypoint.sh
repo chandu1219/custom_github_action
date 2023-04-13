@@ -1,0 +1,1 @@
+ dockerlint $1
